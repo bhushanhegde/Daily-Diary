@@ -5,7 +5,7 @@ import os
 password='bhushan'
 
 #set the path where you have the program file
-PATH='/home/solver/Daily Diary/logs/'
+PATH=os.getcwd()+'/logs/'
 
 #ask the user 1]Professional or 2]Private
 def ask_choice():
@@ -75,7 +75,7 @@ def check_password(word):
 def read_particular(access_mode):
     day=input("enter the date in the form of YYYY-MM-DD\n")
     file_name=day+'.txt'
-    PATH='/home/solver/Daily Diary/logs/'
+    PATH=os.getcwd()+'/logs/'
 
     if access_mode=='private':
 
@@ -96,7 +96,7 @@ def read_particular(access_mode):
 #option 2
 def read_previous(access_mode):
 
-    PATH='/home/solver/Daily Diary/logs/'
+    PATH=os.getcwd()+'/logs/'
     if access_mode=='private':
         PATH+='private/'
     else:
@@ -118,7 +118,8 @@ def read_previous(access_mode):
 #option 3
 
 def read_complete(access_mode):
-    PATH='/home/solver/Daily Diary/logs/'
+    PATH=os.getcwd()+'/logs/'
+    
     if access_mode=='private':
         PATH+='private/'
     else:
@@ -138,7 +139,7 @@ def read_complete(access_mode):
 #option 4
 def log_entry(access_mode):
     #if today file not present then create today's file
-    PATH='/home/solver/Daily Diary/logs/' #here the directory path should be given
+    PATH=os.getcwd()+'/logs/' #here the directory path should be given
     #based on the access_mode
     if access_mode=='private':
         PATH+='private/'
