@@ -1,5 +1,4 @@
-#this program shoud run only once at the begining of instalation.
-#this program should be run first in order to create some directories.
+#this program shoud run only once at the begining of instalation to create some files and directories.
 
 import os
 class dependency:
