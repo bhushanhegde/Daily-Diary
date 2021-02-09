@@ -2,7 +2,7 @@ import datetime
 import os
 
 #this should be set before by the user
-password='bhushan'
+password='PASSWORD'
 
 #set the path where you have the program file
 PATH=os.getcwd()+'/logs/'
